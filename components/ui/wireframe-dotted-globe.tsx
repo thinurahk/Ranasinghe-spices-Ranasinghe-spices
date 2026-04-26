@@ -219,14 +219,14 @@ export default function RotatingEarth({ width = 800, height = 600, className = "
     }
 
     // Set up rotation and interaction
-    const rotation = [0, 0]
+    const rotation: [number, number, number] = [0, 0, 0]
     let autoRotate = true
     const rotationSpeed = 0.5
 
     const rotate = () => {
       if (autoRotate) {
         rotation[0] += rotationSpeed
-        projection.rotate(rotation)
+        projection.rotate(rotation as [number, number, number])
         render()
       }
     }
@@ -249,7 +249,7 @@ export default function RotatingEarth({ width = 800, height = 600, className = "
         rotation[1] = startRotation[1] - dy * sensitivity
         rotation[1] = Math.max(-90, Math.min(90, rotation[1]))
 
-        projection.rotate(rotation)
+        projection.rotate(rotation as [number, number, number])
         render()
       }
 

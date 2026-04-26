@@ -3,6 +3,7 @@ import { Poppins, Cinzel } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
+import { Analytics } from '@vercel/analytics/next';
 
 const poppins = Poppins({
   variable: "--font-sans",
@@ -16,6 +17,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ranasinghespices.com"),
   title: {
     default: "Ranasinghe Spices | Premium Ceylon Spices Exporter in Sri Lanka",
     template: "%s | Ranasinghe Spices",
@@ -95,6 +97,7 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
