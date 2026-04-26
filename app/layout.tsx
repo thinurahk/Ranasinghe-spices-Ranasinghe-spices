@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Ranasinghe Spices",
     images: [
       {
-        url: "/logo.jpeg",
+        url: "/logoblur.png",
         width: 800,
         height: 600,
         alt: "Ranasinghe Spices Logo",
@@ -73,6 +73,11 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
   },
 };
 
