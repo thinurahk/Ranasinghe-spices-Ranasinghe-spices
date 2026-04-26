@@ -175,7 +175,7 @@ export function StickyFooter({ className, ...props }: StickyFooterProps) {
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/10 relative z-10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
-          <p>© {new Date().getFullYear()} Ranasinghe spices. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ranasinghe spices. All rights reserved. Created by <span className="text-white/60">Thinura Hewakoon</span></p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
